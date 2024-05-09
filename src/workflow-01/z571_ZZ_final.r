@@ -188,15 +188,15 @@ for (modelo_rank in PARAM$modelos_rank) {
     )
 
     # creo y grabo la importancia de variables
-    tb_importancia <- as.data.table(lgb.importance(modelo_final))
-    fwrite(tb_importancia,
-      file = paste0(
-        "impo_",
-        nombre_raiz,
-        ".txt"
-      ),
-      sep = "\t"
-    )
+    #tb_importancia <- as.data.table(lgb.importance(modelo_final))
+    #fwrite(tb_importancia,
+    #  file = paste0(
+    #    "impo_",
+    #    nombre_raiz,
+    #    ".txt"
+    #  ),
+    #  sep = "\t"
+    #)
 
 
     # genero la prediccion, Scoring
